@@ -1,0 +1,323 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ol,ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix::after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+/*top开始*/
+.container{
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid red;
+}
+.top{
+	width: 1200px;
+	height: 32px;
+	margin: 0 auto;
+}
+.right{
+	float: right;
+}
+.right>li{
+	float: left;
+	margin-left: 24px;
+	font-size: 12px;
+	line-height: 32px;
+}
+.right a{
+	color: #000;
+}
+.right .mobile{
+	padding-left: 15px;
+	background: url(../img/iphone.png) no-repeat left center;
+}
+/*top结束*/
+/*nav开始*/
+.nav {
+    width: 1200px;
+    height: 97px;
+    margin: 0 auto;
+}
+.nav .logo {
+    float: left;
+    margin-top: 15px;
+}
+.nav ul {
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.nav li {
+    float: left;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0 38px;
+    border-right: 2px solid #000;
+}
+.nav li.last {
+    border-right: 0;
+}
+.nav a{
+	color: #000;
+}
+.form {
+    float: right;
+    margin-top: 35px;
+}
+.form>* {
+    outline: 0;/*除去表单控件的默认轮廓*/
+}
+.form input {
+    float: left;
+    font-size: 12px;
+    height: 27px;
+    width: 163px;
+    text-indent: 8px;
+    border: 1px solid #d03d3d;
+}
+.form button {
+    height: 29px;
+    width: 29px;
+    border: 0;
+    background: #d03d3d url(../img/search.png) no-repeat center;
+}
+/*nav结束*/
+/*banner开始*/
+.banner {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+.banner .img {
+    width: 100%;
+    height: 550px;
+    background: url(../img/banner1.png) no-repeat center;
+}
+.img .text {
+    position: absolute;
+    left: 55%;
+    top: 45px;
+}
+.banner span{
+	position: absolute;
+	display: block;
+    top: 42%;
+    left: 10%;
+    width: 105px;
+    height: 105px;
+    background: url(../img/left.png);
+}
+.banner .rightArrow {
+    left: auto; /*覆盖上面的left: 10%;*/
+    right: 10%;
+    background: url(../img/right.png);
+}
+/*banner结束*/
+/*收藏开始*/
+.content {
+    padding-top: 100px;
+}
+.title {
+    width: 1200px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto 20px;
+    background: url(../img/bg-red.png) no-repeat center;
+}
+.title h2 {
+    color: #202020;
+    font: 36px '宋体';
+    font-weight: bold;
+}
+.title p {
+    font-size: 20px;
+    color: #202020;
+    margin-top: 15px;
+}
+.bg {
+    width: 100%;
+    height: 550px;
+    background: url(../img/banner2.png) no-repeat center;
+}
+.show {
+    width: 1202px;
+    margin: 0 auto;
+}
+.show>ul {
+    float: left;
+}
+ul.one-img {
+    margin-top: 10px;
+}
+ul.four-img {
+    width: 705px;
+}
+.four-img li {
+    float: left;
+    width: 342px;
+    height: 244px;
+    margin: 10px 0 0 10px;
+}
+.show li {
+    position: relative;
+}
+.show li div {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(208, 61, 61, 0.8);
+    font-weight: lighter;
+    color: white;
+}
+.show li h3 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 7px auto;
+    line-height: 1em;
+}
+.show li p {
+    font-size: 12px;
+    line-height: 1em;
+}
+.one-img li div {
+    height: 58px;
+}
+.one-img li h3 {
+    font-size: 16px;
+    margin: 9px auto;
+}
+.one-img li p {
+    font-size: 14px;
+}
+/*收藏结束*/
+.content2 .four-img li {
+    margin: 10px 10px 0 0 ;
+}
+/*会员开始*/
+.member {
+    text-align: center;
+}
+.member button {
+    color: #fff;
+    font-size: 24px;
+    margin: 60px 0 40px;
+    background: #d03d3d;
+    width: 238px;
+    height: 65px;
+    line-height: 65px;
+    border: 0;
+    border-radius: 3px;
+    /*圆角*/
+}
+.rights li {
+    float: left;
+}
+.rights-one {
+    height: 135px;
+    background: #606060;
+}
+.rights-one ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+.rights-one li {
+    margin: 15px 80px 0;
+}
+.rights-one p {
+    font-size: 14px;
+    line-height: 38px;
+    color: #fff;
+}
+.rights-two {
+    height: 48px;
+    background: #cbcbcb;
+}
+.rights-two ul {
+    line-height: 48px;
+    display: inline-block;
+}
+.rights-two li {
+    font-size: 14px;
+    color: #d03d3d;
+    padding: 0 26px;
+}
+.rights-three {
+    margin-top: 60px;
+    border-top: 1px solid #e3e2e2;
+}
+.rights-three ul {
+    display: inline-block;
+    padding: 40px 0;
+}
+.rights-three li {
+    width: 305px;
+    margin-left: 45px;
+    text-align: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rights-three span {
+    display: inline-block;
+    float: left;
+    width: 68px;
+    line-height: 68px;
+    text-align: center;
+    font-size: 36px;
+    color: #d03d3d;
+    margin-right: 20px;
+    background: url(../img/circle.png) no-repeat center;
+}
+.rights-three h4 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.rights-three p {
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+}
+/*会员结束*/
+/*底部结束*/
+.footer {
+    background: #3a3a3a;
+    text-align: center;
+    color: white;
+}
+.footer h4 {
+    font-size: 16px;
+    line-height: 60px;
+    font-weight: normal;
+    padding-top: 22px;
+}
+.footer ul {
+    display: inline-block;
+}
+.footer li {
+    float: left;
+    font-size: 14px;
+    padding: 0 10px;
+    border-right: 2px solid white;
+}
+.footer li.last {
+    border-right: 0;
+}
+.footer p {
+    font-size: 14px;
+    line-height: 60px;
+    padding-bottom: 23px;
+}
+/*底部结束*/
